@@ -1,83 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michael McCourt - Home</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oxygen" />
+    <!-- Custom CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet" />
+</head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Michael McCourt</title>
-    <link rel="icon" href="mike-icon.png">
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oxygen">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/stylesheet.css" rel="stylesheet">
-    <link rel="stylesheet" href="academicons-1.8.6/css/academicons.min.css"/>
-
-  </head>
-
-  <body>
-
-    <!-- Header -->
-    ​<div class="container text-center">
-      <img src="images/mike-square.jpg" class="img-fluid img-thumbnail img-circle">
-      <figcaption class="caption">mjm458 AT cornell.edu </figcaption>
-      <figcaption class="caption">
-        <a href="https://scholar.google.com/citations?user=pKE8iZMAAAAJ&hl=en"><i class="ai ai-google-scholar ai-1x"></i></a>
-        CV/resume: <a href="cv/full-cv.pdf"><i class="fa fa-file-text-o"></i></a>
-        <a href="cv/short-cv.pdf"><i class="fa fa-file-text-o"></i></a>
-      </figcaption>
-    </div>
-
-    <!-- Navigation -->
-    <div class="container">
-      <nav class="navbar navbar-expand-sm justify-content-center">
-        <a class="nav-link active" href="index.html">Intro</a>
-        <a class="nav-link" href="publications.html">Publications</a>
-        <a class="nav-link" href="projects.html">Projects</a>
-        <a class="nav-link" href="about.html">History</a>
-      </nav>
-    </div>
-
-    <!-- About -->
-    <div class="container">
-      <p>Hello everyone. </p>
-      <p>I am Mike McCourt, a <a href="https://sigopt.com/company/team/">research engineer</a>
-        at <a href="https://sigopt.com/company/">SigOpt</a>.  This website is meant to compile stuff
-        that I have done into one location.  Previously, I have kept content at numerous sources, and
-        it has finally become necessary to organize it.</p>
-      <p>My research areas include kernel methods (for numerical analysis, spatial statistics and machine
-        learning), Bayesian optimization, and matrix computations.  I love collaborating with specialists
-        in all sorts of applications (materials science, healthcare, team management, electrical engineering)
-        because I love seeing mathematics put to work.</p>
-      <p>SigOpt has been my home for nearly 7 years now, and I cannot thank enough Scott (CEO) and Patrick (CTO)
-        for bringing me on board.  After being acquired by Intel in 2020, some of us have gone our separate
-        ways, but I will always value the incredible time we had together.  Prior
-        to joining SigOpt, I was a postdoc at
-        the <a href="https://clas.ucdenver.edu/mathematical-and-statistical-sciences/">University of Colorado-Denver</a>
-        and a lab grad student at <a href="https://www.anl.gov/mcs">Argonne MCS division</a>.</p>
-      <p>When I'm not researching or working, I enjoy traveling, whiskey, sports (watching and playing),
-        video games, 中文, breakfast.</p>
-    </div>
-
-    <!-- Footer -->
-    <div class="container text-center">
-      <p class="copyright">Copyright &copy; 2022</p>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
+<body>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light container">
+            <a class="navbar-brand" href="index.html">Michael McCourt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container my-5">
+        <section class="text-center">
+            <h1 class="display-4">Welcome!</h1>
+            <p class="lead">I am Michael McCourt – research engineer, educator, and author. Explore my journey, projects,
+                and publications.</p>
+            <img src="images/mike-square.jpg" class="img-fluid rounded-circle my-3" alt="Michael McCourt">
+        </section>
+    </main>
+    <footer class="bg-light py-3 text-center">
+        <div class="container">
+            <small>Copyright © 2022</small>
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
