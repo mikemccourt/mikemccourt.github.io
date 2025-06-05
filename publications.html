@@ -11,25 +11,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oxygen" />
     <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet" />
+    <link rel="icon" href="mike-icon.png">
+    <script src="getFileName.js"></script>
+    <script src="formNavbar.js"></script>
 </head>
 
 <body>
-    <header class="bg-light">
-        <nav class="navbar navbar-expand-lg navbar-light container">
-            <a class="navbar-brand" href="index.html">Michael McCourt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    
+    <div id="navbar-placeholder"></div>
+    <script>
+      const currentFile = getFileName();
+      formNavbar(currentFile);
+    </script>
+
     <main class="container my-5">
         <h2 class="mb-4">Publications</h2>
         <!-- Books and Chapters -->

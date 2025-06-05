@@ -12,10 +12,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oxygen" />
     <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet" />
+    <link rel="icon" href="mike-icon.png">
+    <script src="getFileName.js"></script>
+    <script src="formNavbar.js"></script>
 
   </head>
 
   <body>
+    <div id="navbar-placeholder"></div>
+    <script>
+      const currentFile = getFileName();
+      formNavbar(currentFile);
+    </script>
 
     <header class="bg-light">
       <nav class="navbar navbar-expand-lg navbar-light container">
