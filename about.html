@@ -12,27 +12,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oxygen">
     <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet">
-
+    <!-- External JS for getFileName function -->
+    <script src="getFileName.js"></script>
   </head>
 
   <body>
 
-    <header class="bg-light">
-      <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand" href="index.html">Michael McCourt</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav ms-auto">
-           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-           <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-           <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
-         </ul>
-       </div>
-      </nav>
-    </header>
+    <!-- Replace header with navbar include -->
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar-placeholder').innerHTML = data;
+          // Set active class for About page
+          document.querySelectorAll('.navbar-nav.ms-auto .nav-link').forEach(link => {
+              if(link.getAttribute('href') === 'about.html'){
+                  link.classList.add('active');
+              }
+          });
+        });
+    </script>
 
     <main class="container my-5">
       <section>
@@ -47,6 +47,9 @@
           My journey spans from my hometown in Ohio, to Chicago, Cornell, Argonne, and beyond. I cherish the time spent in Hong Kong and the personal connections forged along the way.
         </p>
       </section>
+      <h1>Get File Name Example</h1>
+      <button onclick="getFileName('abc')">Get File Name</button>
+      <p>File Name: <span id="result"></span></p>
     </main>
 
     <footer class="bg-light py-3 text-center">
