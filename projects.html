@@ -1,181 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Projects</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects - Michael McCourt</title>
     <link rel="icon" href="mike-icon.png">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oxygen" />
+    <!-- Custom CSS -->
+    <link href="css/stylesheet.css" rel="stylesheet" />
+    <script src="getFileName.js"></script>
+    <script src="formNavbar.js"></script>
+</head>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+      const currentFile = getFileName();
+      formNavbar(currentFile);
+    </script>
 
-    <!-- Custom fonts for this template -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oxygen">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!--link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'-->
-    <!--link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'-->
-
-    <!-- Custom styles for this template -->
-    <link href="css/stylesheet.css" rel="stylesheet">
-
-  </head>
-
-  <body>
-
-    <!-- Header -->
-    ​<div class="container text-center">
-      <img src="images/sigopt-sponsor.jpg" class="img-fluid img-thumbnail img-circle">
-      <!--figcaption class="caption">Space Needle - Seattle</figcaption-->
-    </div>
-
-    <!-- Navigation -->
-    <div class="container">
-      <nav class="navbar navbar-expand-sm justify-content-center">
-        <a class="nav-link" href="index.html">Intro</a>
-        <a class="nav-link" href="publications.html">Publications</a>
-        <a class="nav-link active" href="projects.html">Projects</a>
-        <a class="nav-link" href="about.html">History</a>
-      </nav>
-    </div>
-
-    <div class="container">
-      <p>Here are some recent projects:</p>
-      <ol>
-        <li><a href="#qmcpy">QMCPy: Development of Python software and methodologies for quasi Monte Carlo</a></li>
-        <li><a href="#fabrication">Materials design for optimally performing glass fabrication</a></li>
-        <li><a href="#prefopt">Prefopt: Sample efficient search for most preferred designs</a></li>
-        <li><a href="#gaussqr">GaussQR: A Matlab library in support of our textbook on kernel methods</a></li>
-      </ol>
-    </div>
-
-    <div class="container" id="qmcpy">
-      <div class="card mb-3">
-        <div class="card-body">
-          <img class="card-img-top" src="images/qmc-plots.png" alt="Scatter plots of quasi random points">
-          <h5 class="card-title"><strong>QMCPy: Development of Python software and methodologies for quasi Monte Carlo <a href="https://qmcpy.org/"> qmcpy.org</i></a></strong></h5>
-          <h6 class="card-subtitle mb-2 text-muted">A collaboration between academia and industry</h6>
-          <p class="card-text"><a href="https://mypages.iit.edu/~hickernell/">Dr. Fred Hickernell</a>,
-            <a href="https://www.linkedin.com/in/sou-cheng-choi-7682b65/">Dr. Sou-Cheng Choi</a>
-            and I came together to organize this project,
-            which works to bring quasi Monte Carlo methods to a broader audience by encapsulating cutting edge
-            technologies into a Python library.
-            Quasi Monte Carlo methods improve on standard Monte Carlo methods by replacing the i.i.d. sampling of
-            points with a specially structured sampling of points.
-            <a href="https://alegresor.github.io/Aleksei_Sorokin/">Aleksei Sorokin</a> and Dr. Jagadees Rathanival have worked hard to
-            implement methodologies and work with experts in other communities to identify opportunities for quasi
-            Monte Carlo methods to shine.  Check out our <a href="https://qmcpy.org/category/blog/">blog</a>, and
-            reach out if you are interested in learning more about quasi Monte Carlo.
-          </p>
+    <main class="container my-5">
+      <h2 class="mb-4">Projects</h2>
+      <p>
+        Below are some cool projects I have worked on in the past.
+      </p>
+      <p>
+        I used to keep a full list of my publications, but I was much worse at maintaining it than Google Scholar.  So, check <a href="https://scholar.google.com/citations?user=pKE8iZMAAAAJ&amp;hl=en&amp;oi=ao">that</a> out for a publication list.
+      </p>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/qmc-plots.png" class="card-img-top" alt="QMCPy project image">
+            <div class="card-body">
+              <h5 class="card-title">QMCPy</h5>
+              <p class="card-text">
+                This is a long-time collaboration led by <a href="https://mypages.iit.edu/~hickernell/">Fred Hickernell</a>, <a href="https://www.linkedin.com/in/sou-cheng-choi-7682b65/">Sou-Cheng Choi</a>, <a href="https://alegresor.github.io/Aleksei_Sorokin/">Aleksei Sorokin</a> and others investigating strategies to implement Quasi Monte Carlo methods in Python.
+                I mostly help by cheering them on and supplying funds.
+                <a href="https://ccbatiit.github.io/mcm2025/">MCM meeting</a> in Chicago in July 2025!
+              </p>
+              <a href="https://qmcpy.org/" class="btn btn-primary">Visit QMCPy</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/fabrication-additive.png" class="card-img-top" alt="Glass fabrication project image">
+            <div class="card-body">
+              <h5 class="card-title">Glass Fabrication</h5>
+              <p class="card-text">
+                This project involved materials design for optimally performing additive manufacturing using active learning and Bayesian optimization.
+                <a href="https://www.engineering.pitt.edu/people/faculty/paul-leu/">Paul Leu</a> led this project, which resulted in several great articles and <a href="https://mds-rely.org/">fun times</a>.
+              </p>
+              <a href="https://www.lamp.pitt.edu/" class="btn btn-primary">Visit LAMP group</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/gaussqr-ibb.gif" class="card-img-top" alt="GaussQR project image">
+            <div class="card-body">
+              <h5 class="card-title">GaussQR</h5>
+              <p class="card-text">
+                A Matlab library supporting our textbook on kernel methods with new strategies for stable computation.
+                One day I will work to adapt this to Python, but that has not yet happened.
+              </p>
+              <a href="https://github.com/mikemccourt/gaussqr" class="btn btn-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/orm-vector-graph.gif" class="card-img-top" alt="ORM project image">
+            <div class="card-body">
+              <h5 class="card-title">Team management</h5>
+              <p class="card-text">
+                <a href="https://www.udel.edu/faculty-staff/experts/kyle-emich/">Kyle Emich</a> and <a href="https://www.wcupa.edu/business-PublicManagement/lLu.aspx">Li Lu</a> invited me to collaborate on a project to better analyze how teams work using math.
+                This was a great opportunity to learn how team psychology works and how success is measured.
+              </p>
+              <a href="https://lerner.udel.edu/faculty-staff-directory/kyle-emich/" class="btn btn-primary">Visit Kyle Emich</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/prefopt-tolerance.png" class="card-img-top" alt="Prefopt project image">
+            <div class="card-body">
+              <h5 class="card-title">Prefopt</h5>
+              <p class="card-text">A sample efficient search for most preferred designs without an explicit objective.
+                This code likely no longer runs, but the idea is what is important.
+              </p>
+              <a href="https://github.com/prefopt/prefopt" class="btn btn-primary">GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="container" id="fabrication">
-      <div class="card mb-3">
-        <div class="card-body">
-          <img class="card-img-top" src="images/fabrication-additive.png" alt="Results of a fabrication experiment">
-          <h5 class="card-title"><strong>Materials design for optimally performing glass fabrication</strong></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Bringing AI/ML to the materials science community</h6>
-          <p class="card-text"> An increasingly important theme in the AI/ML community is to reach outside of the
-            standard ML conference participants and find opportunities for AI/ML to be applied more broadly.  To this
-            end, Dr. Harvey Cheng and I worked with materials
-            scientists <a href="http://www.pitt.edu/~pleu/People/index.html">Dr. Paul Leu</a>
-            and <a href="https://scholar.google.com/citations?user=Ob3XGqgAAAAJ&hl=en">Dr. Sajad Haghanifar</a> to
-            use active learning and Bayesian optimization to find high performing glass fabrication strategies with
-            minimal experimentation.
-          </p>
-          <p>Check out our articles on building glass which
-            is <a href="https://pubs.rsc.org/en/content/articlelanding/2019/mh/c9mh00589g/unauth#!divAbstract">easily cleaned</a>,
-            and glass with <a href="https://www.osapublishing.org/optica/abstract.cfm?uri=optica-7-7-784">low reflectivity</a>.
-          </p>
-        </div>
+    </main>
+    <footer class="bg-light py-3 text-center">
+      <div class="container">
+        <small>Copyright © 2025</small>
       </div>
-    </div>
-
-    <div class="container" id="alignment">
-      <div class="card mb-3">
-        <div class="card-body">
-          <img class="card-img-top" src="images/orm-vector-graph.gif" alt="Graph of the distance between two pairs of 3D vectors"  style="width:500px;">
-          <h5 class="card-title"><strong>Alignment as an individual-derived attribute to study team-level outcomes</i></a></strong></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Applying math to help analyze teamwork</h6>
-          <p class="card-text"><a href="https://www.udel.edu/faculty-staff/experts/kyle-emich/">Dr. Kyle Emich</a>
-            and <a href="https://www.wcupa.edu/business-PublicManagement/lLu.aspx">Dr. Li Lu</a>
-            invited me to join a project involving studying team dynamics.  In particular, we wanted to devise a strategy
-            to incorporate individual-level attributes across team members to identify how the <i>alignment</i> between two or more
-            attribtues can be used to predict team-level outcomes.  We created multiple mechanisms for computing alignment
-            based on mathematical/physical concepts which are not generally present in the business/psychology literature
-            in which we are studying this situation.
-          </p>
-          <p>Check out our article on how this alignment can be defined
-            for <a href="https://journals.sagepub.com/eprint/KSPEUH3YEUSUSH2HMVUD/full">two attributes</a>.
-            We are currently working on new research to push this to higher numbers of attributes.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" id="prefopt">
-      <div class="card mb-3">
-        <div class="card-body">
-          <img class="card-img-top" src="images/prefopt-tolerance.png" alt="Tolerance dropping and converging">
-          <h5 class="card-title"><strong>Prefopt: Sample efficient search for most preferred designs</strong> <a href="https://github.com/prefopt/prefopt"> <i class="fa fa-github"></i></a></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Optimization without an explicit objective</h6>
-          <p class="card-text"> Dr. Greg Fasshauer and I worked together for a year and a half to write up a
-            research textbook to help bring together the research on kernel methods in the numerical analysis
-            and spatial statistics communities.  Part of the purpose was to help unify notation, as possible.  Part
-            is to provide a computational implementation (in this case, in Matlab, to speak to graduate students).
-            Part is to discuss recent exciting advances, such as
-            the <a href="https://link.springer.com/article/10.1007/s11075-014-9850-z">Hilbert-Schmidt SVD</a>
-            and <a href="https://link.springer.com/article/10.1007/s00211-011-0391-2">Generalized Sobolev spaces</a>.
-            Future work will include applications of Gaussian processes (such as active learning and Bayesian optimization)
-            and will probably include a Python implementation as well as the Matlab implementation.
-          </p>
-          <p>Check out our workshop papers
-            at the <a href="http://bayesiandeeplearning.org/2017/papers/22.pdf">2017 Bayesian deep learning workshop</a>,
-            and the <a href="https://sites.google.com/view/hill2019">2019 human in the loop learning workshop</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container" id="gaussqr">
-      <div class="card mb-3">
-        <div class="card-body">
-          <img class="card-img-top" src="images/gaussqr-ibb.gif" alt="GaussQR images">
-          <h5 class="card-title"><strong>GaussQR: A Matlab library in support of our textbook on kernel methods</strong> <a href="https://github.com/mikemccourt/gaussqr"> <i class="fa fa-github"></i></a></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Providing access to new strategies for stable computation</h6>
-          <p class="card-text"> In many circumstances, customers may be able to state preferences for certain outcomes
-            without being able to quantify those preferences.  For example, I may prefer Pepsi over Coke, but I cannot
-            provide a numerical representation for that.  This prevents standard optimization tool from being used
-            to identify the most preferred outcome, even though that is surely the outcome which should be sought.
-            Ian Dewancker and I worked to develop some software to apply Gaussian processes in latent space to effect
-            such a search.
-          </p>
-          <p>If you are feeling very generous, or very bored, feel free to check
-            our <a href="https://www.worldscientific.com/worldscibooks/10.1142/9335">book</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="container text-center">
-      <p class="copyright">Copyright &copy; 2022</p>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/clean-blog.min.js"></script>
-
+    </footer>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 
 </html>
