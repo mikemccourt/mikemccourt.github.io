@@ -25,9 +25,8 @@
         .then(response => response.text())
         .then(data => {
           document.getElementById('navbar-placeholder').innerHTML = data;
-          // Set active class for About page
           document.querySelectorAll('.navbar-nav.ms-auto .nav-link').forEach(link => {
-              if(link.getAttribute('href') === 'about.html'){
+              if(link.getAttribute('href') === getFileName()) {
                   link.classList.add('active');
               }
           });
@@ -47,9 +46,6 @@
           My journey spans from my hometown in Ohio, to Chicago, Cornell, Argonne, and beyond. I cherish the time spent in Hong Kong and the personal connections forged along the way.
         </p>
       </section>
-      <h1>Get File Name Example</h1>
-      <button onclick="getFileName()">Get File Name</button>
-      <p>File Name: <span id="result"></span></p>
     </main>
 
     <footer class="bg-light py-3 text-center">
