@@ -12,25 +12,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Oxygen">
     <!-- Custom CSS -->
     <link href="css/stylesheet.css" rel="stylesheet">
-    <!-- External JS for getFileName function -->
+    <!-- External JS for getFileName and formNavbar functions -->
     <script src="getFileName.js"></script>
+    <script src="formNavbar.js"></script>
   </head>
 
   <body>
 
-    <!-- Replace header with navbar include -->
     <div id="navbar-placeholder"></div>
     <script>
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar-placeholder').innerHTML = data;
-          document.querySelectorAll('.navbar-nav.ms-auto .nav-link').forEach(link => {
-              if(link.getAttribute('href') === getFileName()) {
-                  link.classList.add('active');
-              }
-          });
-        });
+      const currentFile = getFileName();
+      formNavbar(currentFile);
     </script>
 
     <main class="container my-5">
